@@ -49,7 +49,7 @@
     <p>126 Foodie Lane, Flavor Town<br>(333) 850-7880<br>info@tastybites.com</p>
   </section>
 
-  <!-- ✅ Booking Modal -->
+  
   <div id="booking-modal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
@@ -75,7 +75,6 @@
     </div>
   </div>
 
-  <!-- ✅ JavaScript at the end -->
   <script>
     const modal = document.getElementById("booking-modal");
     const btn = document.querySelector(".btn");
@@ -85,8 +84,8 @@
 
     btn.addEventListener("click", () => {
       modal.style.display = "block";
-      thankYou.style.display = "none"; // Reset thank-you message
-      form.reset(); // Clear form fields
+      thankYou.style.display = "none"; 
+      form.reset(); 
     });
 
     close.addEventListener("click", () => {
@@ -100,10 +99,10 @@
     });
 
     form.addEventListener("submit", function(e) {
-      e.preventDefault(); // Stop real form submission
-      thankYou.style.display = "block"; // Show thank-you
+      e.preventDefault(); 
+      thankYou.style.display = "block"; 
       setTimeout(() => {
-        modal.style.display = "none"; // Auto-close modal
+        modal.style.display = "none"; 
       }, 2000);
     });
   </script>
